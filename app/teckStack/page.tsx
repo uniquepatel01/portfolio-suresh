@@ -5,14 +5,6 @@ import {
   FaJs,
   FaReact,
   FaNodeJs,
-  FaAws,
-  FaRust,
-  FaLinux,
-  FaDatabase,
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-  FaEnvelope,
 } from "react-icons/fa";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import {
@@ -20,7 +12,6 @@ import {
   Twitter,
   Linkedin,
   LucideInstagram,
-  Globe,
 } from "lucide-react";
 import {
   SiTailwindcss,
@@ -30,9 +21,6 @@ import {
   SiNextdotjs,
   SiFramer,
   SiPrisma,
-  SiCloudflare,
-  SiRedis,
-  SiPostgresql,
   SiFirebase,
   SiSupabase,
 } from "react-icons/si";

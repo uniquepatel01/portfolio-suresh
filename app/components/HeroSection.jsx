@@ -2,10 +2,10 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { TypewriterEffect } from "../../components/ui/typewriter-effect";
+
 import Typewriter from "typewriter-effect";
-import { IconCloud } from "@/components/magicui/icon-cloud";
-import { FlipText } from "@/components/magicui/flip-text";
+
+
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import {
   Github,
