@@ -1,5 +1,5 @@
 "use client";
-
+import Link from 'next/link';
 import { HyperText } from "@/components/magicui/hyper-text";
 import { Github } from "lucide-react";
 import { RainbowButton } from "@/components/magicui/rainbow-button";
@@ -53,16 +53,16 @@ export default function ProjectSection() {
             </div>
             <div className="items-center flex gap-3">
               <div className="bg-black/10 dark:bg-black/10 p-3 rounded-full">
-                <a
+                <Link
                   href="https://github.com/uniquepatel01/foodies"
                   target="_blank"
                 >
                   <Github />
-                </a>
+                </Link>
               </div>
-              <a href="https://foodies-beryl-three.vercel.app/" target="_blank">
-                <RainbowButton>live</RainbowButton>
-              </a>
+              <Link href="https://foodies-beryl-three.vercel.app/" target="_blank">
+                 link
+              </Link>
             </div>
           </div>
 
@@ -111,16 +111,16 @@ export default function ProjectSection() {
             </div>
             <div className="items-center flex gap-3">
               <div className="bg-black/10 dark:bg-black/10 p-3 rounded-full">
-                <a
+                <Link
                   href="https://github.com/uniquepatel01/uniquelust"
                   target="_blank"
                 >
                   <Github />
-                </a>
+                </Link>
               </div>
-              <a href="https://uniquelust.onrender.com/" target="_blank">
-                <RainbowButton>live</RainbowButton>
-              </a>
+              <Link href="https://uniquelust.onrender.com/" target="_blank">
+                live
+              </Link>
             </div>
           </div>
 
