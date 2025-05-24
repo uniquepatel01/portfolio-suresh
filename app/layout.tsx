@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Ubuntu, Pacifico } from "next/font/google";
+import { Geist, Geist_Mono, Ubuntu, Pacifico, Poppins } from "next/font/google";
 
 import "./globals.css";
 import Navbar from "./components/Navbar";
@@ -20,6 +20,11 @@ const ubuntu = Ubuntu({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
 });
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["100","300", "400", "500", "700"],
+});
 
 const pacifico = Pacifico({
   variable: "--font-pacifico",
@@ -39,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${ubuntu.variable} ${pacifico.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${ubuntu.variable} ${pacifico.variable} ${poppins.variable} antialiased`}>
         <div className="w-4/5 mx-auto pt-28">
           <Navbar />
           <main>

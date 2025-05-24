@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 import { TypewriterEffect } from "../../components/ui/typewriter-effect";
 import Typewriter from "typewriter-effect";
 import { IconCloud } from "@/components/magicui/icon-cloud";
@@ -30,18 +31,19 @@ export default function HeroSection() {
   ];
 
   return (
-    <div className="flex justify-center ">
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.9, ease: "easeOut" }}
+      className="flex justify-center mb-40"
+    >
       <div className="w-3/4 flex flex-col justify-center ">
-        <div className="text-7xl text-center m-5">
+        <div className="text-6xl text-center m-5">
           <h1 className="font-bold font-serif text-black mb-5">SURESH</h1>
           {/* <FlipText className="font-bold">Suresh</FlipText> */}
-
-
-            <h1 className="font-pacifico text-red-400">
-                <FlipWords words={words.map((word) => word.text)} />
-            </h1>
-
-
+          <h1 className="font-pacifico text-red-400">
+            <FlipWords words={words.map((word) => word.text)} />
+          </h1>
         </div>
 
         <div className="bg-gray-500 h-1 w-full rounded-full"></div>
@@ -110,6 +112,6 @@ export default function HeroSection() {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
