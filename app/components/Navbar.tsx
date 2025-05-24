@@ -1,5 +1,6 @@
 "use client"
-
+import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from "react";
 import LocalTime from "./LocalTime";
 
@@ -32,7 +33,7 @@ export default function Navbar() {
         >
             {/* Logo */}
             <div className="flex items-center gap-3">
-                <img className="h-10 w-10 rounded-full" src="images/logo.png" alt="logo" />
+                <Image className="h-10 w-10 rounded-full" src="/images/logo.png" alt="logo" width={40} height={40} />
                 <p className="font-pacifico text-gray-400">uniquepatel01</p>
             </div>
 
@@ -43,9 +44,9 @@ export default function Navbar() {
 
             {/* Navigation links and dark mode toggle */}
             <div className="flex items-center gap-4 font-geist-mono">
-                <a href="/" className="no-underline text-inherit">Home</a>
-                <a href="#projectsection" className="no-underline text-inherit">Project</a>
-                <a href="/contact" className="no-underline text-inherit">Contact</a>
+                <Link href="/" className="no-underline text-inherit">Home</Link>
+                <Link href="#projectsection" className="no-underline text-inherit">Project</Link>
+                <Link href="/contact" className="no-underline text-inherit">Contact</Link>
                 <button
                     aria-label="Toggle Dark Mode"
                     className="bg-transparent border-0 cursor-pointer"
