@@ -19,7 +19,7 @@ Welcome to my modern portfolio! This project showcases my skills, projects, and 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/portfolio-suresh.git
+   git clone https://github.com/uniquepatel01/portfolio-suresh.git
    cd portfolio-suresh
    ```
 
