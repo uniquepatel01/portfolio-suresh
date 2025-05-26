@@ -2,7 +2,6 @@
 import Link from 'next/link';
 import { HyperText } from "@/components/magicui/hyper-text";
 import { Github } from "lucide-react";
-import { RainbowButton } from "@/components/magicui/rainbow-button";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
