@@ -36,22 +36,23 @@ export default function ProjectSection() {
       animate="visible"
       exit="exit"
       id="projectsection"
+      className="px-2"
     >
-      <HyperText className="text-center m-10">My Projects</HyperText>
+      <HyperText className="text-center m-6 sm:m-10">My Projects</HyperText>
 
-      <div className="flex flex-col justify-center items-center w-auto">
+      <div className="flex flex-col justify-center items-center w-full">
         {/* first Project  */}
         <motion.div
           variants={cardVariants}
-          className="bg-slate-50 w-3/4 h-80 rounded-3xl m-5 font-sans"
+          className="bg-slate-50 w-full max-w-2xl md:max-w-3xl lg:max-w-4xl rounded-3xl m-3 sm:m-5 font-sans shadow-md"
         >
-          <div className="h-1/3 bg-gray-300 rounded-t-3xl flex justify-between p-7">
+          <div className="h-auto sm:h-1/3 bg-gray-300 rounded-t-3xl flex flex-col sm:flex-row justify-between p-5 sm:p-7 gap-4">
             <div>
-              <h1 className="font-bold text-xl font-sans">uniqueLust</h1>
-              <p className="opacity-80">🔒Personal Project</p>
+              <h1 className="font-bold text-lg sm:text-xl font-sans">uniqueLust</h1>
+              <p className="opacity-80 text-sm sm:text-base">🔒Personal Project</p>
             </div>
             <div className="items-center flex gap-3">
-              <div className="bg-black/10 dark:bg-black/10 p-3 rounded-full">
+              <div className="bg-black/10 dark:bg-black/10 p-2 sm:p-3 rounded-full">
                 <Link
                   href="https://github.com/uniquepatel01/foodies"
                   target="_blank"
@@ -59,14 +60,18 @@ export default function ProjectSection() {
                   <Github />
                 </Link>
               </div>
-              <Link href="https://foodies-beryl-three.vercel.app/" target="_blank">
-                 link
+              <Link
+                href="https://foodies-beryl-three.vercel.app/"
+                target="_blank"
+                className="text-blue-600 underline text-sm sm:text-base"
+              >
+                link
               </Link>
             </div>
           </div>
 
-          <div className="p-7  ">
-            <div className="text-gray-700 mb-4 font-normal font-sans">
+          <div className="p-5 sm:p-7">
+            <div className="text-gray-700 mb-4 font-normal font-sans text-sm sm:text-base">
               uniquelust is an online platform where people can rent out their
               homes, apartments, or unique spaces to travelers. It allows guests
               to find short-term stays in different locations worldwide, often
@@ -98,18 +103,17 @@ export default function ProjectSection() {
         </motion.div>
 
         {/* second Project  */}
-
         <motion.div
           variants={cardVariants}
-          className="bg-slate-50 w-3/4 h-80 rounded-3xl m-5 font-sans"
+          className="bg-slate-50 w-full max-w-2xl md:max-w-3xl lg:max-w-4xl rounded-3xl m-3 sm:m-5 font-sans shadow-md"
         >
-          <div className="h-1/3 bg-gray-300 rounded-t-3xl flex justify-between p-7">
+          <div className="h-auto sm:h-1/3 bg-gray-300 rounded-t-3xl flex flex-col sm:flex-row justify-between p-5 sm:p-7 gap-4">
             <div>
-              <h1 className="font-bold text-xl font-sans">Foodies</h1>
-              <p className="opacity-80">🔒Personal Project</p>
+              <h1 className="font-bold text-lg sm:text-xl font-sans">Foodies</h1>
+              <p className="opacity-80 text-sm sm:text-base">🔒Personal Project</p>
             </div>
             <div className="items-center flex gap-3">
-              <div className="bg-black/10 dark:bg-black/10 p-3 rounded-full">
+              <div className="bg-black/10 dark:bg-black/10 p-2 sm:p-3 rounded-full">
                 <Link
                   href="https://github.com/uniquepatel01/uniquelust"
                   target="_blank"
@@ -117,14 +121,18 @@ export default function ProjectSection() {
                   <Github />
                 </Link>
               </div>
-              <Link href="https://uniquelust.onrender.com/" target="_blank">
+              <Link
+                href="https://uniquelust.onrender.com/"
+                target="_blank"
+                className="text-blue-600 underline text-sm sm:text-base"
+              >
                 live
               </Link>
             </div>
           </div>
 
-          <div className="p-7  ">
-            <div className="text-gray-700 mb-4 font-normal font-sans">
+          <div className="p-5 sm:p-7">
+            <div className="text-gray-700 mb-4 font-normal font-sans text-sm sm:text-base">
               The Foodies repository is a modern landing page project built
               using React, Vite, and Tailwind CSS. It offers a clean, responsive
               design suitable for food-related businesses or portfolios. The
